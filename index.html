@@ -8,8 +8,41 @@
         <a-scene embedded arjs vr-mode-ui="enabled: false">
 
         <a-marker preset="kanji">
-            <a-text text="value: Whatever \n you want !" color="blue" rotation="-90 0 0"></a-text>
-            <a-box position='0 0.5 0' material='opacity: .7;' color="red"></a-box>
+            <a-box depth="1" height="1" width="0.9" position='-2 0 0' material='opacity: .7;' color="#227C78"></a-box>
+            <a-box depth="1" height="3" width="0.9" position='-1 1 0' material='opacity: .7;' color="#227C78"></a-box>
+            <a-box depth="1" height="2" width="0.9" position='0 0.5 0' material='opacity: .7;' color="#227C78"></a-box>
+            <a-box depth="1" height="1" width="0.9" position='1 0 0' material='opacity: .7;' color="#227C78"></a-box>
+            <a-box depth="1" height="1.5" width="0.9" position='2 0.25 0' material='opacity: .7;' color="#227C78"></a-box>
+    
+            <a-sphere color="#00D08B" radius="0.1" position="-2 0.5 0"></a-sphere>
+            <a-sphere color="#00D08B" radius="0.1" position="-1 2.5 0"></a-sphere>
+            <a-sphere color="#00D08B" radius="0.1" position="0 1.5 0"></a-sphere>
+            <a-sphere color="#00D08B" radius="0.1" position="1 0.5 0"></a-sphere>
+            <a-sphere color="#00D08B" radius="0.1" position="2 1 0"></a-sphere>
+    
+            <a-text value="27.5" position="-2.2 0.8 0"></a-text>
+            <a-text value="50.5" position="-1.2 2.8 0"></a-text>
+            <a-text value="38.4" position="-0.2 1.8 0"></a-text>
+            <a-text value="27.4" position="0.8 0.8 0"></a-text>
+            <a-text value="31.2" position="1.8 1.3 0"></a-text>
+    
+            <a-text value="T1" position="-2.2 -0.5 1" rotation="-90 0 0"></a-text>
+            <a-text value="T2" position="-1.2 -0.5 1" rotation="-90 0 0"></a-text>
+            <a-text value="T3" position="-0.2 -0.5 1" rotation="-90 0 0"></a-text>
+            <a-text value="T4" position="0.8 -0.5 1" rotation="-90 0 0"></a-text>
+            <a-text value="T5" position="1.8 -0.5 1" rotation="-90 0 0"></a-text>
+
+            <a-curve id="track1">
+                <a-curve-point position="-2 0.5 0"></a-curve-point>
+                <a-curve-point position="-1 2.5 0"></a-curve-point>
+                <a-curve-point position="0 1.5 0"></a-curve-point>
+                <a-curve-point position="1 0.5 0"></a-curve-point>
+                <a-curve-point position="2 1 0"></a-curve-point>
+            </a-curve>
+            
+            <!-- Draw the Curve -->
+            <a-draw-curve curveref="#track1" material="shader: line; color: green;"></a-draw-curve>
+         
         </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
