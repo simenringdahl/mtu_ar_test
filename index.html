@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="style.css">
     <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <!-- <script src="https://unpkg.com/aframe-charts-component/dist/aframe-charts-component.min.js"></script> -->
     
-    <body style="margin : 0px; overflow: hidden;">
+    <body>
+        <div class="header">
+            <p class="page-title">ACC AR Demo</p>
+        </div>
+        <div class="vis-container">
         <a-scene embedded arjs vr-mode-ui="enabled: false">
 
         <a-marker preset="kanji">
@@ -46,5 +51,6 @@
         </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
+    </div>
     </body>
 </html>
