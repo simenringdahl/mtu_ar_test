@@ -1,15 +1,7 @@
-.page-title {
-    font-family: "Verdana";
-    margin-top: 0px;
-    margin-left: 10px;
-    color: white;
-}
+ 
+  /* Hide Streamlit Branding */
+  /* #MainMenu {visibility: hidden;}
+  footer {visibility: hidden;}
+  header {visibility: hidden;} */
 
-.header {
-    height: 5%;
-    background-color: #005C5A
-}
-
-.vis-container {
-    margin-top: 20px;
-}
+  #body 
