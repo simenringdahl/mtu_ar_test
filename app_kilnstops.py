@@ -16,7 +16,7 @@ st.set_page_config(page_title='Kilnstops explorer')
 st.title('Kilnstops explorer')
 st.subheader('Feed me with your excel sheet')
 
-local_css("style/style.css")
+local_css("style.css")
 
 streamlit_style = """
 			<style>
